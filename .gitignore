@@ -1,0 +1,6 @@
+.DS_Store
+.bundle
+comparison.*
+samples/*
+Gemfile.lock
+*.gem

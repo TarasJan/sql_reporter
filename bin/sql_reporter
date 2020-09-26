@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+require 'sql_reporter'
+
+begin
+  SqlReporter::ReporterFactory.new.for_format.generate_report
+rescue StandardError => e
+  STDERR.puts('[ERROR] Unexpected Error occured')
+  puts e.message
+  puts e.backtrace
+end
